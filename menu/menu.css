@@ -13,13 +13,32 @@ header {
   margin-bottom: 40px;
 }
 
-header > * {
+header>* {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+}
+
+header li>a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header li>a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  color: blue;
+  background-size: 100% 2px;
 }
 
 header .logo img {
@@ -43,7 +62,7 @@ header .menu-toogle span {
   background-color: rgb(136, 136, 136);
 }
 
-header .menu-toogle span + span {
+header .menu-toogle span+span {
   margin-top: 4px;
 }
 
